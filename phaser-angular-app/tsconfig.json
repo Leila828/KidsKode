@@ -1,0 +1,43 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "esModuleInterop": true,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "noImplicitAny": false,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2015",
+    "allowSyntheticDefaultImports": true,
+    "lib": ["es2018", "dom", "scripthost"]
+  },
+  "files": ["src/phaser.d.ts", "src/phaser.min.js", "src/phaser.js"],
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true,
+    "target": "esnext",
+    "module": "esnext",
+
+    "enableIvy": false,
+    //  "strict": true,
+    //"noImplicitAny": false,
+    //"noEmit": true,
+    // "allowJs": true,
+    "jsx": "perserve",
+    "importHelpers": true,
+    //"moduleResolution": "node",
+    "allowSyntheticDefaultImports": true
+    //"sourceMap": true,
+    // "baseUrl": "./src",
+    /* "path": {
+      "~/*:": ["./*"]
+    }*/
+  },
+  "typeRoots": ["./node_modules/phaser/types"],
+  "types": ["Phaser"]
+}

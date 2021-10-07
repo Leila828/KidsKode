@@ -1,0 +1,410 @@
+<app-navbar2></app-navbar2>
+
+<div id="sidebar-wrapper">
+  <ul class="sidebar-nav">
+    <li  style="margin-top: -10px;" class="sidebar-brand">
+    </li>
+    <li>
+      <a href="#" translate>Profile</a>
+    </li>
+    <li>
+      <a href="#" translate>Shortcuts</a>
+    </li>
+    <li>
+      <a href="#" translate>Overview</a>
+    </li>
+  </ul>
+</div>
+
+<img   style="position: absolute;
+right: 0;
+top: 12%;
+width: 460px;"  src="/assets/aicha/couch.png" alt="">
+<div *ngIf="User?.compte?.username"  >
+  <h2 style="    position: absolute;
+
+top: -160px;
+left: 30%;
+font-family: 'Amatic SC';
+
+
+font-size: 80px;" translate>Welcome </h2>
+  <h2 style="    position: absolute;
+
+top: -160px;
+left: 47%;
+font-family: 'Amatic SC';
+
+
+font-size: 80px;" > {{User?.compte?.username}}</h2>
+
+</div>
+<div id="box" style="left: 7%;
+margin-top:380px;" >
+  <h3 id="trial"
+    style="
+      color: #f9cf0e;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+      font-size: 20px;
+      font-weight: 500;
+    "
+   translate >
+    Available Courses in your trial
+  </h3>
+  <hr style="color: #f9cf0e; height: 5px; margin-bottom: 10px" />
+  <div class="col-lg-4 course_col" style="display: inline-block">
+    <div
+      class="course"
+      style="
+        border-style: solid;
+        border-color: #318ce7;
+        border-width: 5px;
+        border-radius: 15px;
+        margin: 3px;
+      "
+    >
+      <div
+        class="activity-specs novice"
+        ng-class="activity.level"
+        style="background-color: #318ce7"
+      >
+        <div class="ng-binding" style="display: inline-block" translate>
+          <img
+            ng-cdn-src="home/block_coding.svg"
+            class="ng-isolate-scope"
+            src="https://d2j5eocv5gptnv.cloudfront.net/assets/home/block_coding-f472221fcc7fede3f5daaf82c7db16fccd817de456cc63e008c8a6f2a72ffe4e.svg"
+          />
+          Pre-Block Coding
+        </div>
+        <div
+          class="ng-binding"
+          style="display: inline-block; margin-left: 90px"
+        translate>
+          <img
+            ng-cdn-src="home/novice.svg"
+            class="ng-isolate-scope"
+            src="https://d2j5eocv5gptnv.cloudfront.net/assets/home/novice-177cdde65ffd8bc95b3a72e706a53b6cc1e10c5aa3be65e32911202145d0f6e0.svg"
+          />
+          Novice
+        </div>
+      </div>
+      <div class="course_image"><img src="/assets/saharaa.png" alt="" /></div>
+      <div class="course_body" (click)="course1Click()">
+        <div class="course_title" style="text-align: center">
+          <a  translate>Course 01 </a>
+          <p style="text-align: center" translate>Sequencing</p>
+        </div>
+
+        <div class="course_text">
+          <p translate>
+            Help Franklin the turtle to collect his broccoli using an enumerated collection of objects in which repetitions are allowed
+          </p>
+        </div>
+        <div *ngIf="User">
+          <progress
+            value="{{ User.enfantLearning.points2 }}"
+            max="10"
+            style="position: relative;left: 16%"
+          ></progress>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4 course_col" style="display: inline-block">
+    <div
+      class="course"
+      style="
+        border-style: solid;
+        border-color: #318ce7;
+        border-width: 5px;
+        border-radius: 15px;
+        margin: 3px;
+      "
+    >
+      <div
+        class="activity-specs novice"
+        ng-class="activity.level"
+        style="background-color: #318ce7"
+      >
+        <div class="ng-binding" style="display: inline-block" translate>
+          <img
+            ng-cdn-src="home/block_coding.svg"
+            class="ng-isolate-scope"
+            src="https://d2j5eocv5gptnv.cloudfront.net/assets/home/block_coding-f472221fcc7fede3f5daaf82c7db16fccd817de456cc63e008c8a6f2a72ffe4e.svg"
+          />
+          Pre-Block Coding
+        </div>
+        <div
+          class="ng-binding"
+          style="display: inline-block; margin-left: 90px"
+        translate
+        >
+          <img
+            ng-cdn-src="home/novice.svg"
+            class="ng-isolate-scope"
+            src="https://d2j5eocv5gptnv.cloudfront.net/assets/home/novice-177cdde65ffd8bc95b3a72e706a53b6cc1e10c5aa3be65e32911202145d0f6e0.svg"
+          />
+          Novice
+        </div>
+      </div>
+      <div class="course_image">
+        <img src="/assets/snow.png"  alt="" style="height: 186px" />
+      </div>
+      <div class="course_body" (click)="course2Click()" >
+        <div class="course_title" style="text-align: center">
+          <a    translate>Course 02 </a>
+          <p style="text-align: center" translate> Loops</p>
+        </div>
+
+        <div class="course_text">
+          <p translate>
+            It's cold and Franklin couldn't resiste so he asked Kowalski to help him, but first he needs to collect some money, can you give him a hand ?
+          </p>
+        </div>
+        <div *ngIf="User">
+          <progress
+            value="{{ User.enfantLearning.points }}"
+            max="60"
+            style="position: relative;left: 16%"
+          ></progress>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4 course_col" style="display: inline-block">
+    <div
+      class="course"
+      style="
+        border-style: solid;
+        border-color: #318ce7;
+        border-width: 5px;
+        border-radius: 15px;
+        margin: 3px;
+      "
+    >
+      <div
+        class="activity-specs novice"
+        ng-class="activity.level"
+        style="background-color: #318ce7"
+      >
+        <div class="ng-binding" style="display: inline-block" translate>
+          <img
+            ng-cdn-src="home/block_coding.svg"
+            class="ng-isolate-scope"
+            src="https://d2j5eocv5gptnv.cloudfront.net/assets/home/block_coding-f472221fcc7fede3f5daaf82c7db16fccd817de456cc63e008c8a6f2a72ffe4e.svg"
+          />
+          Pre-Block Coding
+        </div>
+        <div
+          class="ng-binding"
+          style="display: inline-block; margin-left: 90px"
+        translate>
+          <img
+            ng-cdn-src="home/novice.svg"
+            class="ng-isolate-scope"
+            src="https://d2j5eocv5gptnv.cloudfront.net/assets/home/novice-177cdde65ffd8bc95b3a72e706a53b6cc1e10c5aa3be65e32911202145d0f6e0.svg"
+          />
+          Novice
+        </div>
+      </div>
+      <div class="course_image">
+        <img
+          src="/assets/spring.png"
+          alt=""
+          style="height: 186px; width: 325px"
+        />
+      </div>
+      <div class="course_body">
+        <div class="course_title" style="text-align: center">
+          <a href="#" translate>Course 03 </a>
+          <p style="text-align: center" translate>Conditions</p>
+        </div>
+
+        <div class="course_text">
+          <p translate>
+            Spring is here and Franklin back. some snowballs didn't melt yet. please help him to evaluate his actions to avoid them
+          </p>
+        </div>
+
+        <div *ngIf="User">
+          <progress value="0" max="100"
+                    style="position: relative;left: 16%"
+          ></progress>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 course_col" style="display: inline-block">
+    <div
+      class="course"
+      style="
+        border-style: solid;
+        border-color: #318ce7;
+        border-width: 5px;
+        border-radius: 15px;
+        margin: 3px;
+      "
+    >
+      <div
+        class="activity-specs novice"
+        ng-class="activity.level"
+        style="background-color: #318ce7"
+      >
+        <div class="ng-binding" style="display: inline-block" translate>
+          <img
+            ng-cdn-src="home/block_coding.svg"
+            class="ng-isolate-scope"
+            src="https://d2j5eocv5gptnv.cloudfront.net/assets/home/block_coding-f472221fcc7fede3f5daaf82c7db16fccd817de456cc63e008c8a6f2a72ffe4e.svg"
+          />
+          Pre-Block Coding
+        </div>
+        <div
+          class="ng-binding"
+          style="display: inline-block; margin-left: 90px"
+         translate>
+          <img
+            ng-cdn-src="home/novice.svg"
+            class="ng-isolate-scope"
+            src="https://d2j5eocv5gptnv.cloudfront.net/assets/home/novice-177cdde65ffd8bc95b3a72e706a53b6cc1e10c5aa3be65e32911202145d0f6e0.svg"
+          />
+          Novice
+        </div>
+      </div>
+      <div class="course_image">
+        <img
+          ng-cdn-src="home/activities/beaver_blocks/hour-of-code.png?v=2"
+          class="thumb ng-isolate-scope"
+          src="https://d2j5eocv5gptnv.cloudfront.net/assets/home/activities/beaver_blocks/hour-of-code-d5d7aaaaf0164e4790a97ff93f280f1778fd78cc62a04fb4651fc2dea9c975cf.png"
+          style="height: 186px; width: 323px"
+        />
+      </div>
+      <div class="course_body">
+        <div class="course_title" style="text-align: center">
+          <a href="#" translate>End course </a>
+          <p style="text-align: center" translate>HUGE QUIZ</p>
+        </div>
+
+        <div class="course_text">
+          <p translate>a quiz which covers all the courses</p>
+        </div>
+
+        <div *ngIf="User">
+          <progress value="0" max="100"
+                    style="position: relative;left: 16%"
+          ></progress>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--
+<section style="position: absolute; z-index: 1; margin-left: 0px">
+  <div>
+    <img
+      ng-cdn-src="home/k1.png"
+      class="lockImage ng-isolate-scope"
+      style="
+        position: absolute;
+        z-index: 1;
+        top: -48px;
+        left: 500px;
+        width: 300px;
+      "
+      ng-show="locked()"
+      src="/assets/clumber.png"
+    />
+    <img
+      class="brush"
+      src="/assets/footer2.png"
+      alt="image"
+      style="width: 1480px"
+    />
+  </div>
+
+  <div
+    _ngcontent-apq-c2=""
+    style="
+      position: relative;
+      left: 30px;
+
+      height: 200px;
+      width: 1480px;
+      /* background-color: #ffd700;*/
+      background-color: #fdf1b7;
+      background-size: cover;
+      background-position: center;
+      display: block;
+    "
+  >
+    <section style="position: absolute; left: 190px">
+      <div style="display: inline-block; margin-right: 70px; max-width: 150px">
+        <h3>COMPANY</h3>
+
+        <p>About us</p>
+        <p>Blog</p>
+        <p>Jobs</p>
+        <p>Partners</p>
+      </div>
+      <div style="display: inline-block; margin-right: 70px; max-width: 150px">
+        <h3>Curriculum</h3>
+
+        <p>Courses</p>
+        <p>Plans</p>
+        <p>Summer Camp</p>
+      </div>
+      <div style="display: inline-block; margin-right: 70px; max-width: 150px">
+        <h3>Support</h3>
+
+        <p>Help Center</p>
+        <p>Contact Us</p>
+        <p>FAQ</p>
+      </div>
+      <div style="display: inline-block; margin-right: 50px; max-width: 440px">
+        <h3>About KidsKode</h3>
+
+        <p>
+          KidsKode is a leading coding for kids program. Through its
+          award-winning courses, millions of students learn how to code in real
+          programming languages. KidsKode offers an engaging and enjoyable
+          curriculum for schools, after-school clubs and camps as well as
+          self-paced online courses to learn coding at home.
+        </p>
+      </div>
+      <div style="display: inline-block">
+        <h3>KEEP IN TOUCH</h3>
+        <i
+          class="fa fa-facebook fa-2x"
+          aria-hidden="true"
+          style="margin-right: 17px"
+        >
+        </i>
+        <i
+          class="fa fa-youtube fa-2x"
+          aria-hidden="true"
+          style="margin-right: 17px"
+        >
+        </i>
+        <i
+          class="fa fa-twitter fa-2x"
+          aria-hidden="true"
+          style="margin-right: 17px"
+        >
+        </i>
+        <i
+          class="fa fa-google fa-2x"
+          aria-hidden="true"
+          style="margin-right: 17px"
+        >
+        </i>
+        <br />
+        <br />
+      </div>
+    </section>
+  </div>
+</section>
+-->

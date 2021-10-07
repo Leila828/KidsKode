@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">phaser</string>
+    <string name="title_activity_main">phaser</string>
+    <string name="package_name">com.phaser.test</string>
+    <string name="custom_url_scheme">com.phaser.test</string>
+</resources>

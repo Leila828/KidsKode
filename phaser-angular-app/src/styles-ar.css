@@ -1,0 +1,10 @@
+
+body {
+  background-color: yellow;
+}
+.select{
+  background-color: yellow;
+}
+.opaque {
+  background-color: rgba(0, 253, 4, 0.87);
+}

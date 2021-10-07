@@ -1,0 +1,96 @@
+
+<body
+  style="
+    background-image: url('https://www.transparenttextures.com/patterns/inspiration-geometry.png');
+    background-color: #ffffff;
+  "
+>
+<app-navbar2></app-navbar2>
+
+<div *ngIf="currentUser.roles == 'ROLE_PARENT'">
+  <div class="all"></div>
+  <img
+    style="margin-left: -181px"
+    src="/assets/aicha/brush2.png"
+    alt="image"
+  />
+
+  <h1>My Account</h1>
+  <div class="account" style="left: 320px">
+    <div class="content">
+      <div class="usertitle">
+        <h3>User Deta :</h3>
+      </div>
+
+      <div class="userdetails">
+        <img class="lapin" src="/assets/aicha/avatarparent.png" alt="image" />
+
+        <h4>
+          <strong
+            style="
+                font-family: 'Amatic SC';
+                font-weight: 900;
+                font-size: xx-large;
+              "
+          >{{ currentUser.username }}</strong
+          >
+        </h4>
+        <h6>Parent</h6>
+        <h5>Email:{{ currentUser.email }}</h5>
+      </div>
+      <hr />
+      <div class="usertitle child">
+        <h3>Children Details :</h3>
+      </div>
+
+      <div class="childdetails">
+        <img class="vache" src="/assets/aicha/avatarchild.png" alt="image" />
+
+        <h4>
+          <strong
+            style="
+                font-family: 'Amatic SC';
+                font-weight: 900;
+                font-size: xx-large;
+              "
+          >{{ username.enfant.compte.username }}</strong
+          >
+        </h4>
+        <h6>Child</h6>
+        <h5>Email:{{ username.enfant.compte.email }}</h5>
+      </div>
+      <hr />
+    </div>
+  </div>
+</div>
+
+<div *ngIf="currentUser.roles == 'ROLE_CHILD'">
+  <div class="all child"></div>
+  <img class="lion" src="/assets/aicha/brush2.png" alt="image" />
+  <h1>My Account</h1>
+  <div class="account child">
+    <div class="content child">
+      <div class="usertitle">
+        <h3>User Details :</h3>
+      </div>
+      <hr />
+      <div class="userdetails child">
+        <img class="lapin" src="/assets/aicha/avatarchild.png" alt="image" />
+
+        <h4>
+          <strong
+            style="
+                font-family: 'Amatic SC';
+                font-weight: 900;
+                font-size: xx-large;
+              "
+          >{{ currentUser.username }}
+          </strong>
+        </h4>
+        <h6>Child</h6>
+        <h5>Email:{{ currentUser.email }}</h5>
+      </div>
+    </div>
+  </div>
+</div>
+</body>

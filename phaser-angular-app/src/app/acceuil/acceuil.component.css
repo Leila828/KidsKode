@@ -1,0 +1,40 @@
+#gameContainer {
+  border-radius: 30px;
+  background-color: #0f056b;
+
+  margin-right: 300px;
+  margin-left: 320px;
+
+  padding-left: 70px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#text{
+  font-size: 53px;
+  letter-spacing: 4.5;
+  font-family: "Amatic SC";
+  position: relative;
+
+  top: -255px;
+  left: 20px;
+  text-decoration: none solid rgb(255, 255, 255);
+  text-transform: uppercase;
+  word-spacing: 0;
+  font-weight: bolder;
+  color: #ffffff;
+
+}#text2{
+  font-size: 53px;
+  letter-spacing: 4.5;
+  font-family: "Amatic SC";
+  position: relative;
+
+  top: -255px;
+  left: 103px;
+  text-decoration: none solid rgb(255, 255, 255);
+  text-transform: uppercase;
+  word-spacing: 0;
+  font-weight: bolder;
+  color: #ffffff;
+
+}

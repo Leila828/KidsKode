@@ -1,0 +1,156 @@
+<div class="all"></div>
+
+<form
+  id="msform"
+  name="form"
+  (ngSubmit)="f.form.valid && onSubmit()"
+  #f="ngForm"
+  novalidate
+>
+  <ul id="progressbar">
+    <li class="active" translate>Parent Informations</li>
+    <li translate>Child Informations</li>
+  </ul>
+  <fieldset>
+    <div class="form-group">
+      <input
+        placeholder= "{{'username' | translate }}"
+        type="text"
+        class="form-control"
+        name="username"
+        [(ngModel)]="form.username"
+        required
+        minlength="3"
+        maxlength="20"
+        #username="ngModel"
+      />
+      <div class="alert-danger" *ngIf="username.errors && f.submitted">
+        <div *ngIf="username.errors.required" translate>Username is required</div>
+        <div *ngIf="username.errors.minlength" translate>
+          Username must be at least 3 characters
+        </div>
+        <div *ngIf="username.errors.maxlength" translate>
+          Username must be at most 20 characters
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <input
+        type="email"
+        class="form-control"
+        name="email"
+        [(ngModel)]="form.email"
+        required
+        email
+        #email="ngModel"
+        placeholder= "{{'email' | translate }}"
+      />
+      <div class="alert-danger" *ngIf="email.errors && f.submitted">
+        <div *ngIf="email.errors.required" translate>Email is required</div>
+        <div *ngIf="email.errors.email" translate>
+          Email must be a valid email address
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <input
+        type="password"
+        class="form-control"
+        name="password"
+        [(ngModel)]="form.password"
+        required
+        minlength="6"
+        #password="ngModel"
+        placeholder= "{{'Password' | translate }}"
+      />
+      <div class="alert-danger" *ngIf="password.errors && f.submitted">
+        <div *ngIf="password.errors.required" translate> Password is required</div>
+        <div *ngIf="password.errors.minlength" translate>
+          Password must be at least 6 characters
+        </div>
+      </div>
+    </div>
+
+    <input type="button" name="next" class="next action-button" value="{{'Next' | translate }}" />
+  </fieldset>
+
+  <fieldset>
+    <div class="form-group">
+      <input
+        type="number"
+        class="form-control"
+        name="age"
+        [(ngModel)]="form.age"
+        required
+        #age="ngModel"
+        placeholder= "{{'Age' | translate }}"
+      />
+    </div>
+    <div class="form-group">
+      <input
+        type="text"
+        class="form-control"
+        name="experience"
+        [(ngModel)]="form.experience"
+        required
+        #experience="ngModel"
+        placeholder= "{{ 'experience' | translate}}"
+      />
+    </div>
+    <div class="form-group">
+      <input
+        type="text"
+        class="form-control"
+        name="nomenfant"
+        [(ngModel)]="form.nomenfant"
+        required
+        #nomenfant="ngModel"
+        placeholder= "{{ 'Child name' | translate}}"
+      />
+    </div>
+    <input
+      style="
+        width: 100px;
+        color: white;
+        border: 0 none;
+        border-radius: 1px;
+        cursor: pointer;
+        padding: 10px 5px;
+        margin: 10px 5px;
+        margin-left: -98px;
+      "
+      type="button"
+      name="previous"
+      class="previous action-button"
+      value="{{'Previous' | translate}}"
+    />
+
+    <div class="form-group">
+      <button
+        style="
+          width: 100px;
+          color: white;
+          border: 0 none;
+          border-radius: 1px;
+          cursor: pointer;
+          padding: 8px 5px;
+          margin: 10px 5px;
+          margin-top: -50px;
+          margin-left: 155px;
+        "
+        class="btn btn-primary btn-block action-button"
+       translate>
+        Signup
+      </button>
+    </div>
+  </fieldset>
+
+  <div class="alert alert-warning" *ngIf="f.submitted && isSignUpFailed">
+    Signup failed!<br />{{ errorMessage }}
+  </div>
+</form>
+
+<div class="alert alert-success" *ngIf="isSuccessful == true" translate>
+  Your registration is successful!
+</div>

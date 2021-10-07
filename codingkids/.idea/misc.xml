@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenBuildProjectComponent">
+    <option name="mavenExecutable" value="" />
+    <option name="Settings File" value="" />
+    <option name="mavenCommandLineParams" value="" />
+    <option name="vmOptions" value="" />
+    <option name="useMavenEmbedder" value="false" />
+    <option name="useFilter" value="false" />
+    <option name="Batch Mode" value="false" />
+    <option name="Check Plugin Updates" value="false" />
+    <option name="Debug" value="false" />
+    <option name="Errors" value="false" />
+    <option name="Fail At End" value="false" />
+    <option name="Fail Fast" value="false" />
+    <option name="Fail Never" value="false" />
+    <option name="Lax Checksums" value="false" />
+    <option name="No Plugin Registry" value="false" />
+    <option name="No Plugin Updates" value="false" />
+    <option name="Non Recursive" value="false" />
+    <option name="Offline" value="false" />
+    <option name="Reactor" value="false" />
+    <option name="Strict Checksums" value="false" />
+    <option name="Update Plugins" value="false" />
+    <option name="Update Snapshots" value="false" />
+    <option name="Skip Tests" value="false" />
+    <pom-list />
+  </component>
+
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+=======
+=======
+>>>>>>> 1eb3744abaf84f00b4f511fe473cd0834294a685
+=======
+=======          </component>
+
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+
+=======
+>>>>>>> d66aeee3409ba62ac641a56f742bfb44f38c91f8
+>>>>>>> 3560dbb2f0b3304072191b2abadb33e338216112   </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/ms-registry/pom.xml" />
+        <option value="$PROJECT_DIR$/ms-authentification/pom.xml" />
+        <option value="$PROJECT_DIR$/ms-learning/pom.xml" />
+        <option value="$PROJECT_DIR$/ms-paiement/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-gateway/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+
+  </component>
+
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+>>>>>>> 366ee314e60c05ed880da6a01bf9afef3740e635
+>>>>>>> 1eb3744abaf84f00b4f511fe473cd0834294a685
+=======
+======= </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+>>>>>>> 366ee314e60c05ed880da6a01bf9afef3740e635
+=======
+>>>>>>> 61762eae18895b30885d6fa34126c09e07bdca61
+>>>>>>> d66aeee3409ba62ac641a56f742bfb44f38c91f8
+>>>>>>> 3560dbb2f0b3304072191b2abadb33e338216112
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

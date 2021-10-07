@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Schoolbell&display=swap");
+h2 {
+  position: absolute;
+  font-size: 45px;
+  letter-spacing: 4.5;
+  font-family: "Schoolbell", cursive;
+  text-align: center;
+  text-decoration: none solid rgb(255, 255, 255);
+  text-transform: uppercase;
+  word-spacing: 3px;
+  font-weight: bolder;
+  color: #ffffff;
+  display: block;
+
+  position: absolute;
+  z-index: 1;
+  /*top: 5%;*/
+  top: 20%;
+  left: 73%;
+  margin-top: auto;
+  margin-left: -145px;
+
+  text-align: center;
+}
+img {
+  position: absolute;
+ /* top: 5%;*/
+  top: 20%;
+  left: 55%;
+  margin-top: auto;
+  margin-left: -145px;
+  position: absolute;
+}
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+.all {
+  content: "";
+  height: 100vh;
+  width: 100%;
+  background-image: url("/assets/aicha/bg3.jpg");
+  background-size: cover;
+  background-position: center;
+  display: block;
+
+  background-size: 400px 400px;
+}
+
+.login-page {
+  z-index: 1;
+  position: absolute;
+  width: 360px;
+  padding: 8% 0 0;
+  /*left: 35%;*/
+  left: 12%;
+  top: 28%;
+}
+.form {
+  position: absolute;
+  z-index: 1;
+margin: auto;
+  width: 300px;
+  padding: 45px;
+  text-align: center;
+  /*background: rgba(104, 183, 178, 0.75);*/
+  background: rgba(24 ,141, 133 , 0.75);
+
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-top-right-radius: 7px;
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+ /* background: #68b7b2;*/
+  background: #0c4e4a;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,
+.form button:active,
+.form button:focus {
+  background: #fea100;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: black;
+  font-size: 13px;
+}
+.form .message a {
+  color: black;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+#failed {
+  margin: 10px;
+  padding: 7px;
+}

@@ -1,0 +1,41 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: route1
+          predicates:
+            - Path=/ms-authentification/**
+          filters:
+            - RewritePath=/ms-authentification/(?<s>.*), /${s}
+
+          uri: http://localhost:8881/
+
+        - id: route2
+          predicates:
+            - Path=/ms-payment/**
+          filters:
+            - RewritePath=/ms-payment/(?<s>.*), /${s}
+
+          uri: http://localhost:8883/
+
+        - id: route3
+          predicates:
+            - Path=/ms-learning/**
+          filters:
+            - RewritePath=/ms-learning/(?<s>.*), /${s}
+
+          uri: http://localhost:8882/
+
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: 'http://localhost:4200'
+            allowedHeaders:
+              - "*"
+              - content-type
+              - Access-Control-Allow-Headers
+            allowedMethods:
+              - GET
+              - POST
+              - OPTIONS
+              - PATCH

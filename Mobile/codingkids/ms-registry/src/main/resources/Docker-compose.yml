@@ -1,0 +1,79 @@
+version: "3"
+services:
+  mymongodb:
+    image: mongo:latest
+    container_name: "mymongodb"
+    ports:
+      - 27017:27017
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=rootuser
+      - MONGO_INITDB_ROOT_PASSWORD=rootpass
+    networks:
+      - kids_app
+
+  eureka-server-image:
+    image: ms-registry:1.0
+    container_name: ms-registry
+    ports:
+      - 8888:8880
+    networks:
+      - kids_app
+
+
+
+  ms-cloud-gateway-image:
+    image: ms-proxy
+    depends_on:
+      - eureka-server-image
+    environment:
+      PROFILE: "default"
+      eureka.client.service-url.defaultZone: "http://eureka-server-image:8888/eureka"
+
+    ports:
+      - 7777:7777
+
+    restart: on-failure
+    networks:
+      - kids_app
+
+  ms-authentification-image:
+    image: ms-authentification
+    depends_on:
+      - eureka-server-image
+      - mymongodb
+    environment:
+      PROFILE: "default"
+      eureka.client.service-url.defaultZone: "http://eureka-server-image:8888/eureka"
+
+    ports:
+      - 8881:8881
+
+    restart: on-failure
+    links:
+      - mymongodb
+    networks:
+      - kids_app
+
+
+
+  ms-paiement-image:
+    image: ms-paiement
+    depends_on:
+      - eureka-server-image
+    environment:
+      PROFILE: "default"
+      eureka.client.service-url.defaultZone: "http://eureka-server-image:8888/eureka"
+
+    ports:
+      - 8883:8883
+
+    restart: on-failure
+    links:
+      - mymongodb
+volumes:
+  data: {}
+
+
+networks:
+  kids_app:
+    internal: true

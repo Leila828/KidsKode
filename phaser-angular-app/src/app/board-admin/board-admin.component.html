@@ -1,0 +1,248 @@
+<app-navbar2></app-navbar2>
+<div id="sidebar-wrapper">
+  <ul class="sidebar-nav">
+    <li class="sidebar-brand"></li>
+    <li style="background-color: #f9cf0e">
+      <a [routerLink]="['/Dashboardadmin']" >Dashboard</a>
+    </li>
+    <li>
+      <a [routerLink]="['/UserList']" >Users List</a>
+    </li>
+    <li>
+      <a [routerLink]="['/PaymentList']" >Payment List</a>
+    </li>
+  </ul>
+</div>
+
+<div style="left: 395px; top: -100px" id="box">
+  <img src="/assets/aicha/group.png" alt="" />
+  <span
+    class="leaderboard__value"
+    style="
+      width: fit-content;
+      /* text-align: left; */
+      margin-left: -116px;
+      left: 237px;
+      position: absolute;
+      top: 20px;
+    "
+  >
+    <div *ngIf="userlist">
+      <span>{{ userlist.length - 1 }}</span>
+    </div></span
+  >
+  <h4 style="position: absolute; left: 138px; top: 79px; opacity: 0.6">
+    users
+  </h4>
+</div>
+
+
+
+
+<div style="left: 442px; top: -100px" id="box">
+  <img src="/assets/aicha/conversation.png" alt="" />
+  <span
+    class="leaderboard__value"
+    style="
+      width: fit-content;
+      /* text-align: left; */
+      margin-left: -116px;
+      left: 237px;
+      position: absolute;
+      top: 20px;
+    "
+  >
+    <div *ngIf="faq1 || faq2">
+      <span>{{ faq1?.length + faq2?.length }}</span>
+    </div>
+  </span>
+  <h4 style="position: absolute; left: 138px; top: 79px; opacity: 0.6">faq</h4>
+</div>
+
+<div style="left: 476px; top: -100px" id="box">
+  <img src="/assets/aicha/online-learning.png" alt="ana" />
+  <span
+    class="leaderboard__value"
+    style="
+      width: fit-content;
+      /* text-align: left; */
+      margin-left: -116px;
+      left: 237px;
+      position: absolute;
+      top: 20px;
+    "
+    ><span>5</span></span
+  >
+  <h4 style="position: absolute; left: 138px; top: 79px; opacity: 0.6">
+    courses
+  </h4>
+</div>
+
+<div style="height: 298px; width: 500px; top: 350px; left: -475px" id="box">
+  <div
+    style="
+      background-color: #ffffff;
+      display: block;
+      height: 243px;
+      width: 300px;
+      margin-top: 18px;
+      /* margin-left: -26px; */
+      /* left: 73px; */
+      margin-left: 1px;
+    "
+  >
+    <canvas
+      style="
+        position: absolute;
+        display: block;
+        width: 495px;
+        right: -4px;
+        top: 20px;
+      "
+      baseChart
+      [data]="pieChartData"
+      [labels]="pieChartLabels"
+      [chartType]="pieChartType"
+    ></canvas>
+  </div>
+</div>
+
+
+<button style="position: absolute; top: 58%; left: 73%" (click)="showform()">
+  Add Faq
+</button>
+<div
+  id="box"
+  *ngIf="sure"
+  style="
+    top: -92px;
+    left: 963px;
+    padding: 29px 12px 15px 20px;
+    height: 299px;
+    width: 353px;
+  "
+>
+  <form
+    style="text-align: center"
+    name="form"
+    (ngSubmit)="onSubmit()"
+    #f="ngForm"
+    novalidate
+  >
+    <div style="margin-right: 5%" class="form-group">
+      <input
+        placeholder="Question"
+        type="textarea"
+        class="form-control"
+        name="question1"
+        [(ngModel)]="form.question1"
+        required
+        #question1="ngModel"
+      />
+    </div>
+    <div style="margin-right: 5%" class="form-group">
+      <input
+        placeholder="Answer"
+        type="textarea"
+        class="form-control"
+        name="answer1"
+        [(ngModel)]="form.answer1"
+        required
+        #answer1="ngModel"
+      />
+    </div>
+
+    <div style="margin-right: 5%" class="form-group">
+      <select class="form-control" name="level" id="">
+        <option value="level1">Level 1</option>
+        <option value="level2">Level 2</option>
+      </select>
+    </div>
+
+    <button
+      (click)="Cancel()"
+      style="
+        margin-top: 4px;
+        left: 22%;
+        width: 90px;
+        background-color: deepskyblue;
+      "
+      class="btn btn-primary btn-block"
+    >
+      Cancel
+    </button>
+    <div class="form-group">
+      <button
+        style="margin-top: 3px; left: 54%; width: 90px"
+        class="btn btn-primary btn-block"
+      >
+        Send
+      </button>
+    </div>
+  </form>
+</div>
+
+<!--
+<h1
+  style="
+    text-align: center;
+    width: max-content;
+    position: absolute;
+    left: 27%;
+    top: 37%;
+  "
+>
+  Table Of Users Payments
+</h1>
+<table style="position: absolute; top: 50%; left: 24%" class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Username</th>
+      <th scope="col">Email</th>
+      <th scope="col">Amount</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let c of listpayments">
+      <th scope="row">{{ i + 1 }}</th>
+      <td>{{ c.user.username }}</td>
+      <td>{{ c.user.email }}</td>
+      <td>{{ c.amount }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1
+  style="
+    text-align: center;
+    width: max-content;
+    position: absolute;
+    left: 27%;
+    top: 74%;
+  "
+>
+  Table Of Parents
+</h1>
+<table
+  style="position: absolute; top: 70%; left: 24%; margin-top: 104px"
+  class="table"
+>
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Username</th>
+      <th scope="col">Email</th>
+      <th scope="col">Amount</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let c of listpayments">
+      <th scope="row">{{ i + 1 }}</th>
+      <td>{{ c.user.username }}</td>
+      <td>{{ c.user.email }}</td>
+      <td>{{ c.amount }}</td>
+    </tr>
+  </tbody>
+</table>
+-->

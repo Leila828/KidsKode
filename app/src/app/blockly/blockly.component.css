@@ -1,0 +1,39 @@
+.view-modal {
+  top: 70%;
+  color: #7d2ae8;
+  font-size: 18px;
+  padding: 10px 25px;
+  transform: translate(-50%, -50%);
+}
+
+#blocklyDiv {
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  buttom:0
+
+
+}
+#blocklyDiv2 {
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+
+}
+#blocklyDiv3 {
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+
+}
+#div2{
+
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+
+}
+

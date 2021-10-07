@@ -1,0 +1,33 @@
+
+
+<app-navbar2></app-navbar2>
+<div
+  [ngStyle]="{
+    backgroundImage: 'url(/assets/aicha/BGok.png)',
+    paddingTop: '90px',
+    paddingBottom: '40px'
+  }"
+>
+  <div id="gameContainer">
+    <div id="divId" style="background-color: #a1b3d8; width: 750px;height: 540px ; display: none">
+     <img src="/assets/video/study.png" style="width: 300px; height: 400px; position: relative;left: 60% ; top: 15%">
+    <div >
+      <h2 id="text" style="position: relative">Are you ready to start </h2>
+      <h2 id="text2" style="position: relative">the quiz ? </h2>
+      <div style="position: absolute ;top: 60%">
+        <button type="button" class="btn btn-primary btn-lg" style=" position: relative;;margin: 25px;padding: 25px; background-color: #11076c"  (click)="course2Click()" >watch again</button>
+        <button type="button" class="btn btn-primary btn-lg" style=" position: relative;margin: 25px;padding: 25px;background-color: #11076c" (click)="course1Click()">Start Quiz</button>
+
+      </div>
+
+
+    </div>
+      </div>
+
+    <video width="750" height="540" controls (ended)="myTest1()" id="vi" >
+      <source src="/assets/video/level1loop.mp4" type="video/mp4" id="myVideo">
+
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>

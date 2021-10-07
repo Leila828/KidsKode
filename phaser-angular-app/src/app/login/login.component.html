@@ -1,0 +1,100 @@
+
+<body style="">
+  <div class="all"></div>
+  <img class="brush" src="/assets/aicha/brush2.png" alt="image" />
+
+  <img
+    style="width: 200px; position: absolute; top: 42%; right: 0"
+    class="lion"
+    src="/assets/aicha/login2@2x.png"
+    alt="image"
+  />
+  <img
+    style="width: 120px; position: absolute; top: 80%; right: 12%"
+    class="lion"
+    src="/assets/aicha/login3@2x.png"
+    alt="image"
+  />
+  <img
+    style="width: 150px; position: absolute; top: 53%; right: 22%"
+    class="lion"
+    src="/assets/aicha/login4@2x.png"
+    alt="image"
+  />
+
+  <h2 id="login" translate>LOGIN</h2>
+  <div class="login-page">
+    <div class="form">
+      <form
+        class="login-form"
+        *ngIf="!isLoggedIn"
+        name="form"
+        (ngSubmit)="f.form.valid && onSubmit()"
+        #f="ngForm"
+        novalidate
+      >
+        <input
+          type="text"
+          name="username"
+          [(ngModel)]="form.username"
+          required
+
+          #username="ngModel"
+          placeholder="{{ 'username' | translate }}"
+          translate
+
+        />
+        <div
+          id="failed"
+          class="alert alert-danger"
+          role="alert"
+          *ngIf="username.errors && f.submitted"
+        translate>
+          Username is required!
+        </div>
+        <input
+          name="password"
+          [(ngModel)]="form.password"
+          required
+          minlength="6"
+          #password="ngModel"
+          placeholder="{{ 'password' | translate }}"
+          type="password"
+
+        />
+        <div
+          id="failed"
+          class="alert alert-danger"
+          role="alert"
+          *ngIf="password.errors && f.submitted"
+        >
+          <div id="failed" *ngIf="password.errors.required" translate>
+            Password is required
+          </div>
+          <div id="failed" *ngIf="password.errors.minlength" translate>
+
+          </div>
+        </div>
+        <button translate>login</button>
+        <div class="form-group">
+          <div
+            id="failed"
+            class="alert alert-danger"
+            role="alert"
+            *ngIf="f.submitted && isLoginFailed"
+           translate>
+            Login failed: {{ errorMessage }}
+          </div>
+        </div>
+        <p class="message" translate>Not registered? <a routerLink="../register" translate>Create an account</a></p>
+        <p class="message" translate>
+          Forget password?
+          <a routerLink="../forgetpassword" class="my-2 my-sm-0" translate>Click here</a>
+        </p>
+      </form>
+      <div class="alert alert-success" *ngIf="isLoggedIn" translate>
+        Already Logged In.
+      </div>
+    </div>
+  </div>
+</body>

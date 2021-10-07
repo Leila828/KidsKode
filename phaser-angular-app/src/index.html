@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>PhaserAngularApp</title>
+    <!--<script src="https://cdn.jsdelivr.net/npm/phaser@3.54.0/dist/phaser-arcade-physics.min.js"></script>-->
+    <script src="assets/phaser.min.js"></script>
+    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+
+    <base href="./" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <app-root></app-root>
+    <!--
+  <div id="game" style=" border-radius: 5px;
+  background-color: #f2f2f2;
+  margin-left: 250px;
+  margin-right:250px;
+ ">
+
+  </div>
+  -->
+    <script>
+      if (global === undefined) {
+        var global = window;
+      }
+    </script>
+
+    <script type="text/javascript">
+      Stripe.setPublishableKey(
+        "pk_test_51JLXjdBZjTcVIm2sefy0PkZ99f9080fR2PQMSWI00jvK4XmHzpFNNFXskfjbt0BRlG4VOvSVDO0uoo4vLTef4tZM00KOiznBMB"
+      );
+    </script>
+  </body>
+</html>

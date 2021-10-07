@@ -1,0 +1,104 @@
+<div class="all"></div>
+<!--
+<div class="col-md-12">
+  <div class="card card-container">
+    <form
+      *ngIf="!isSuccessful"
+      name="form"
+      (ngSubmit)="f.form.valid && onSubmit()"
+      #f="ngForm"
+      novalidate
+    >
+      <div class="form-group">
+        <label for="resetPasswordToken">Enter you New Password here</label>
+        <input
+          type="password"
+          class="form-control"
+          name="resetPasswordToken"
+          [(ngModel)]="form.resetPasswordToken"
+          required
+          resetPasswordToken
+          #resetPasswordToken="ngModel"
+        />
+        <div
+          class="alert-danger"
+          *ngIf="resetPasswordToken.errors && f.submitted"
+        >
+          <div *ngIf="resetPasswordToken.errors.required">
+            Password is required
+          </div>
+          <div *ngIf="resetPasswordToken.errors.minlength">
+            Password must be at least 6 characters
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <button class="btn btn-primary btn-block">Submit</button>
+      </div>
+
+      <div class="alert alert-warning" *ngIf="f.submitted && isSignUpFailed">
+        Reset failed!<br />{{ errorMessage }}
+      </div>
+    </form>
+    <div class="alert alert-success" *ngIf="isSuccessful">
+      Your Password has succesufully changed !
+    </div>
+  </div>
+</div>
+-->
+
+<div class="login-page">
+  <div class="form">
+    <form
+      *ngIf="!isSuccessful"
+      name="form"
+      (ngSubmit)="f.form.valid && onSubmit()"
+      #f="ngForm"
+      novalidate
+    >
+      <label
+        style="
+          display: inline-block;
+          margin-bottom: 0.5rem;
+          font-family: Amatic SC;
+          font-weight: 900;
+          font-size: xx-large;
+          color: #4b4b4b;
+        "
+        for="resetPasswordToken"
+        >Enter you New Password here</label
+      >
+
+      <input
+        type="password"
+        class="form-control"
+        name="resetPasswordToken"
+        [(ngModel)]="form.resetPasswordToken"
+        required
+        resetPasswordToken
+        #resetPasswordToken="ngModel"
+      />
+
+      <div
+        class="alert-danger"
+        *ngIf="resetPasswordToken.errors && f.submitted"
+      >
+        <div *ngIf="resetPasswordToken.errors.required">
+          Password is required
+        </div>
+        <div *ngIf="resetPasswordToken.errors.minlength">
+          Password must be at least 6 characters
+        </div>
+      </div>
+
+      <div class="form-group">
+        <button class="btn btn-primary btn-block">Submit</button>
+      </div>
+
+      <div class="alert alert-warning" *ngIf="f.submitted && isSignUpFailed">
+        Reset failed!<br />{{ errorMessage }}
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900|Poppins:300,400,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
+
+@media (min-width: 800px) and (max-width: 850px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #1c2331 !important;
+  }
+}
+.view,
+body,
+html {
+  height: 100%;
+}
+.navbar {
+  /* background-color: rgba(0, 0, 0, 0.2);*/
+  background: transparent;
+  border-bottom: 2px solid white;
+}
+
+.nav-link {
+  display: block;
+  padding: 0px 4px;
+}
+
+.dropdown-item a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
+
+.navbar li a {
+  color: #424c6a;
+  font-family: "Amatic SC", Sans-serif;
+  font-weight: 900;
+  font-size: 25px;
+}
+.navbar li select option{
+  color: #424c6a;
+  font-family: "Amatic SC", Sans-serif;
+  font-weight: 900;
+  font-size: 25px;
+}
+.navbar li select {
+  color: #424c6a;
+  font-family: "Amatic SC", Sans-serif;
+  font-weight: 900;
+  font-size: 25px;
+}
+.border {
+  border: 3px solid #424c6a !important;
+}
+.rounded {
+  border-radius: 1.25rem !important;
+}
+
+.navbar li {
+  padding-right: 20px;
+}
+.navbar li select{
+  padding-right: 20px;
+  background: transparent;
+}
+.page-footer,
+.top-nav-collapse {
+  background-color: #1c2331;
+}
+
+.opaque {
+  background-color: rgba(253, 241, 183, 0.87);
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #1c2331;
+  }
+}

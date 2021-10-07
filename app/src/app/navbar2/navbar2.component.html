@@ -1,0 +1,122 @@
+<nav
+  style="background-color: black; height: 64px"
+  class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar"
+>
+  <div class="container">
+    <!-- Brand -->
+    <a
+      class="navbar-brand"
+      href="https://mdbootstrap.com/material-design-for-bootstrap/"
+      target="_blank"
+    >
+      <img style="margin-left: -60px" src="/assets/lila/LOGO2.png" />
+    </a>
+
+    <!-- Collapse -->
+
+    <!-- Links -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Left -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link">
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- Right -->
+
+      <ul style="margin-right: -65px" class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/profile']">
+            <div *ngIf="user_role.roles == 'ROLE_PARENT'">
+              <img
+                style="width: 50px; height: 50px"
+                src="/assets/aicha/avatarparent.png"
+                alt=""
+              />
+            </div>
+            <div *ngIf="user_role.roles == 'ROLE_CHILD'">
+              <img
+                style="height: 50px; width: 50px"
+                src="/assets/aicha/avatarchild.png"
+                alt=""
+              />
+            </div>
+          </a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <img
+              style="width: 38px; margin-top: 1px"
+              src="/assets/aicha/menubtn.png"
+              alt=""
+            />
+          </a>
+          <div
+            style="content: none"
+            class="dropdown-menu"
+            aria-labelledby="navbarDropdown"
+          >
+            <a
+              style="
+                font-family: 'Montserrat', sans-serif;
+                font-size: 15px;
+                font-weight: 100;
+              "
+              class="dropdown-item"
+              [routerLink]="['/leaderboard']"
+              >Leaderboard</a
+            >
+
+            <div *ngIf="user_role.roles == 'ROLE_CHILD'">
+              <a
+                style="
+                  font-family: 'Montserrat', sans-serif;
+                  font-size: 15px;
+                  font-weight: 100;
+                "
+                class="dropdown-item"
+                [routerLink]="['/Dashboard/child']"
+                >My Account</a
+              >
+            </div>
+            <div *ngIf="user_role.roles == 'ROLE_PARENT'">
+              <a
+                style="
+                  font-family: 'Montserrat', sans-serif;
+                  font-size: 15px;
+                  font-weight: 100;
+                "
+                class="dropdown-item"
+                [routerLink]="['/Dashboard/parent']"
+                >My Account</a
+              >
+            </div>
+
+            <a
+              style="
+                font-family: 'Montserrat', sans-serif;
+                font-size: 15px;
+                font-weight: 100;
+              "
+              class="dropdown-item"
+              (click)="logout()"
+              >Logout</a
+            >
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

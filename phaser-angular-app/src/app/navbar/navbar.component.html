@@ -1,0 +1,112 @@
+<nav *ngIf="nav.visible">
+  <nav id="navv"
+    style="height: 64px"
+    class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar"
+  >
+    <div class="container">
+      <!-- Brand -->
+      <a
+        class="navbar-brand"
+        [routerLink]="['home']"
+      >
+        <img style="margin-left: -180px" src="/assets/lila/LOGO2.png" />
+      </a>
+
+      <!-- Collapse -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div  class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Left -->
+
+          <ul id="left" class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                 translate>Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                translate>
+                Courses
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a
+                  style="
+                  font-family: 'Montserrat', sans-serif;
+                  font-size: 15px;
+                  font-weight: 100;
+                "
+                  class="dropdown-item"
+                  [routerLink]="['junior']"
+                  translate>KidsKode Junior</a
+                >
+                <a id="a22"
+                   style="
+                  font-family: 'Montserrat', sans-serif;
+                  font-size: 15px;
+                  font-weight: 100;
+                "
+                   class="dropdown-item"
+                   [routerLink]="['midlevel']"
+                   translate>KidsKode Midlevel
+                </a
+                >
+              </div>
+            </li>
+          </ul>
+
+          <!-- Right -->
+          <ul id="pos"  style="margin-right: -180px" class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link border rounded"
+
+                [routerLink]="['register']"
+                translate>
+                Sign Up
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link border rounded"
+                [routerLink]="['login']"
+
+                translate>
+                Login
+              </a>
+            </li>
+            <li class="nav-item">
+              <select class="form-select border rounded" (change)="changeLangage(selected)"   [(ngModel)]="selected">
+                <option *ngFor="let n of lang1" >{{ n }}</option>
+
+              </select>
+            </li>
+
+          </ul>
+
+
+
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar -->
+</nav>

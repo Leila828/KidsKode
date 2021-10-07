@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d6bccc25-02d6-4231-8f14-485b53d6aeb8" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1xTP2k2N9DnK6It2x8cU2yB6Myo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.last.introduce.type" value="VAR" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/lila" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Users\LENOVO\Downloads\codingForKids-aicha\codingForKids-aicha\phaser-angular-app\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\LENOVO\Downloads\codingForKids-aicha\codingForKids-aicha\phaser-angular-app\src\assets\lila" />
+      <recent name="C:\Users\LENOVO\Downloads\codingForKids-aicha\codingForKids-aicha\phaser-angular-app\src\app" />
+      <recent name="C:\Users\LENOVO\Downloads\codingForKids-aicha\codingForKids-aicha\phaser-angular-app\src\assets\aicha" />
+      <recent name="C:\Users\LENOVO\Downloads\codingForKids-aicha\codingForKids-aicha\phaser-angular-app\node_modules" />
+      <recent name="C:\Users\LENOVO\Downloads\codingForKids-aicha\codingForKids-aicha\phaser-angular-app\src\assets\badge" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\LENOVO\Downloads\codingForKids-aicha\codingForKids-aicha\phaser-angular-app\src\assets\lila" />
+      <recent name="C:\Users\LENOVO\Downloads\codingForKids-aicha\codingForKids-aicha\phaser-angular-app\src\assets\aicha" />
+      <recent name="C:\Users\LENOVO\Downloads\codingForKids-aicha\codingForKids-aicha\phaser-angular-app\src\assets\video" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.Angular CLI Server">
+    <configuration name="E2E Tests (phaser-angular-app)" type="JavaScriptTestRunnerProtractor">
+      <config-file value="$PROJECT_DIR$/e2e/protractor.conf.js" />
+      <node-interpreter value="project" />
+      <protractor-options value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular CLI Server" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d6bccc25-02d6-4231-8f14-485b53d6aeb8" name="Default Changelist" comment="" />
+      <created>1630375899430</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1630375899430</updated>
+      <workItem from="1630375904071" duration="1132000" />
+      <workItem from="1630885334462" duration="13431000" />
+      <workItem from="1630938779768" duration="50257000" />
+      <workItem from="1631105723566" duration="33483000" />
+      <workItem from="1631203790188" duration="20333000" />
+      <workItem from="1631435938874" duration="96000" />
+      <workItem from="1631436179125" duration="121000" />
+      <workItem from="1631441465120" duration="8000" />
+      <workItem from="1631456348446" duration="392000" />
+      <workItem from="1631524996428" duration="67968000" />
+      <workItem from="1632034488604" duration="1970000" />
+      <workItem from="1632048094015" duration="5645000" />
+      <workItem from="1632303401987" duration="16699000" />
+      <workItem from="1632340901726" duration="672000" />
+      <workItem from="1632490700754" duration="3698000" />
+      <workItem from="1632519029554" duration="1354000" />
+      <workItem from="1632611213311" duration="1875000" />
+      <workItem from="1633637161597" duration="605000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="954" y="139" key="#com.intellij.ide.util.MemberChooser" timestamp="1631199456166">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="954" y="139" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1631199456166" />
+    <state x="477" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1633637170680">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="477" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1633637170680" />
+    <state x="809" y="189" key="run.anything.popup" timestamp="1631612850689">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="809" y="189" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1631612850689" />
+    <state x="815" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1631137107924">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="815" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1631137107924" />
+  </component>
+</project>

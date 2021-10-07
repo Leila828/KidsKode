@@ -1,0 +1,286 @@
+/*
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Schoolbell&display=swap");
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+.header-main {
+  font-size: 45px;
+  letter-spacing: 4.5;
+  font-family: "Schoolbell", cursive;
+  text-align: center;
+  text-decoration: none solid rgb(255, 255, 255);
+  text-transform: uppercase;
+  word-spacing: 0;
+  font-weight: bolder;
+  color: #ffff;
+  display: block;
+  
+}
+.all {
+  content: "";
+  height: 100vh;
+  width: 100%;
+  background-image: url("/assets/aicha/bg3.jpg");
+  background-size: cover;
+  background-position: center;
+  display: block;
+  opacity: 0.8;
+
+  background-size: 400px 400px;
+  /* filter: blur(10px);
+   background-image: radial-gradient(#68b7b2 1.5px, #ffffff 1.5px);
+  -webkit-filter: blur(10px);
+  transition: all 1000ms;
+}
+p {
+  position: absolute;
+  z-index: 1;
+  top: 8%;
+  left: 50%;
+  margin-top: 90px;
+  margin-left: -145px;
+  width: 300px;
+  height: 350px;
+  text-align: center;
+  transition: all 1000ms;
+}
+
+.child {
+  top: 40%;
+  right: 30%;
+}
+.btn {
+  position: absolute;
+  z-index: 1;
+
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #e74c3c;
+  border-radius: 0.6em;
+  color: #e74c3c;
+  cursor: pointer;
+  display: inline-block;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+.btn:hover,
+.btn:focus {
+  color: #fff;
+  outline: 0;
+}
+.lion {
+  background-size: cover;
+  width: 250px;
+  height: 360px;
+  position: absolute;
+  z-index: 1;
+  top: 40%;
+  left: 5%;
+}
+.monkey {
+  background-size: cover;
+  width: 270px;
+  height: 360px;
+  position: absolute;
+  z-index: 1;
+
+  top: 40%;
+  right: 5%;
+}
+/* 
+.fourth {
+  border-color: #fea100;
+  color: #fff;
+  background-image: linear-gradient(45deg, #fea100 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  transition: background 300ms ease-in-out;
+}
+.fourth:hover {
+  background-position: 0;
+}
+
+.parent {
+  top: 40%;
+  left: 25%;
+}
+body.sign-up
+  #container
+  .amit-layout
+  .main
+  .select
+  .select-text
+  .select-subtitle,
+body.reset-pass
+  #container
+  .amit-layout
+  .main
+  .select
+  .select-text
+  .select-subtitle {
+  font-size: 13px;
+  color: #929aaa;
+  width: 180px;
+  margin: auto;
+}
+*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900|Poppins:300,400,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+.header-main {
+  font-size: 53px;
+  letter-spacing: 4.5;
+  font-family: "Amatic SC";
+  text-align: center;
+  text-decoration: none solid rgb(255, 255, 255);
+  text-transform: uppercase;
+  word-spacing: 0;
+  font-weight: bolder;
+  color: #ffffff;
+  display: block;
+  /*
+    line-height: 56.25;
+
+  word-spacing: 0;
+*/
+}
+.all {
+  content: "";
+  height: 100vh;
+  width: 100%;
+  background-image: url("/assets/aicha/bg3.jpg");
+  background-size: cover;
+  background-position: center;
+  display: block;
+  opacity: 0.8;
+
+  background-size: 400px 400px;
+  /* filter: blur(10px);
+   background-image: radial-gradient(#68b7b2 1.5px, #ffffff 1.5px);
+  -webkit-filter: blur(10px);
+  transition: all 1000ms;*/
+}
+p {
+  position: absolute;
+  z-index: 1;
+  top: 6%;
+  left: 50%;
+  margin-top: 90px;
+  margin-left: -145px;
+  width: 300px;
+  height: 350px;
+  text-align: center;
+  transition: all 1000ms;
+}
+
+.child {
+  top: 40%;
+  right: 25%;
+}
+.btn {
+  position: absolute;
+
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-radius: 0.6em;
+
+  cursor: pointer;
+  display: inline-block;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+.btn:hover,
+.btn:focus {
+  border: 5px solid;
+  color: #6fb2a5;
+  outline: 0;
+}
+.lion {
+  background-size: cover;
+  width: 250px;
+  height: 360px;
+  position: absolute;
+  z-index: 1;
+  top: 40%;
+  left: 5%;
+}
+.monkey {
+  background-size: cover;
+  width: 270px;
+  height: 360px;
+  position: absolute;
+  z-index: 1;
+
+  top: 40%;
+  right: 5%;
+}
+/*
+.fourth {
+border-color: #fea100;
+color: #fff;
+background-image: linear-gradient(45deg, #fea100 50%, transparent 50%);
+background-position: 100%;
+background-size: 400%;
+transition: background 300ms ease-in-out;
+}
+.fourth:hover {
+  background-position: 0;
+}
+ */
+
+body.sign-up
+  #container
+  .amit-layout
+  .main
+  .select
+  .select-text
+  .select-subtitle,
+body.reset-pass
+  #container
+  .amit-layout
+  .main
+  .select
+  .select-text
+  .select-subtitle {
+  font-size: 13px;
+  color: #929aaa;
+  width: 180px;
+  margin: auto;
+}
+.parent {
+  top: 40%;
+  left: 25%;
+}

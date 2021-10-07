@@ -1,0 +1,386 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20210425.145608.46232.0.001.json",
+    "dumpEventTime": "2021-04-25T14:56:08Z",
+    "dumpEventTimeStamp": "1619355368289",
+    "processId": 46232,
+    "cwd": "C:\\Users\\LENOVO\\Downloads\\Gamification\\gam\\phaser\\phaser-angular-app",
+    "commandLine": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\LENOVO\\Downloads\\Gamification\\gam\\phaser\\phaser-angular-app\\node_modules\\@ngtools\\webpack\\src\\type_checker_worker.js",
+      "9d93e901-158a-4cf9-ba1b-2f0582ffcfeb"
+    ],
+    "nodejsVersion": "v12.14.1",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.14.1",
+      "v8": "7.7.299.13-node.16",
+      "uv": "1.33.1",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.1",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1d",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.14.1/node-v12.14.1-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.14.1/node-v12.14.1.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.14.1/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.19041",
+    "osVersion": "Windows 10 Pro",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz",
+        "speed": 1992,
+        "user": 15253453,
+        "nice": 0,
+        "sys": 15767296,
+        "idle": 166043984,
+        "irq": 2639281
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz",
+        "speed": 1992,
+        "user": 11302062,
+        "nice": 0,
+        "sys": 7170750,
+        "idle": 178591734,
+        "irq": 200171
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz",
+        "speed": 1992,
+        "user": 20477312,
+        "nice": 0,
+        "sys": 14891781,
+        "idle": 161695453,
+        "irq": 282765
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz",
+        "speed": 1992,
+        "user": 13379828,
+        "nice": 0,
+        "sys": 9054250,
+        "idle": 174630453,
+        "irq": 178093
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz",
+        "speed": 1992,
+        "user": 17674484,
+        "nice": 0,
+        "sys": 12152437,
+        "idle": 167237609,
+        "irq": 240578
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz",
+        "speed": 1992,
+        "user": 10971296,
+        "nice": 0,
+        "sys": 8147062,
+        "idle": 177946171,
+        "irq": 129328
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz",
+        "speed": 1992,
+        "user": 15747515,
+        "nice": 0,
+        "sys": 10251781,
+        "idle": 171065234,
+        "irq": 167375
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz",
+        "speed": 1992,
+        "user": 12869000,
+        "nice": 0,
+        "sys": 8433781,
+        "idle": 175761750,
+        "irq": 124703
+      }
+    ],
+    "host": "LAPTOP-NBU6VMGL"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff794e61759",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff794e65b7c",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff794e64b38",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff794f5433b",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff795758c5e",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff795740ca1",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff79560e56c",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff795616671",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff79560bcd3",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff79560b0c4",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff79560a51f",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7956245ae",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff79562b944",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff79562b901",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff79550be9c",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7953bfd6a",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff795b8463d",
+      "symbol": ""
+    },
+    {
+      "pc": "0x0000031043ae379c",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 171311104,
+    "totalCommittedMemory": 171311104,
+    "usedMemory": 158844016,
+    "availableMemory": 2029310664,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 261872,
+        "used": 32296,
+        "available": 229576
+      },
+      "new_space": {
+        "memorySize": 1048576,
+        "committedMemory": 1048576,
+        "capacity": 1047488,
+        "used": 0,
+        "available": 1047488
+      },
+      "old_space": {
+        "memorySize": 125415424,
+        "committedMemory": 125415424,
+        "capacity": 118749464,
+        "used": 118267544,
+        "available": 481920
+      },
+      "code_space": {
+        "memorySize": 3047424,
+        "committedMemory": 3047424,
+        "capacity": 1170656,
+        "used": 1170656,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 2887680,
+        "committedMemory": 2887680,
+        "capacity": 835520,
+        "used": 835520,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 38600704,
+        "committedMemory": 38600704,
+        "capacity": 38534448,
+        "used": 38534448,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 3552,
+        "used": 3552,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1047488,
+        "used": 0,
+        "available": 1047488
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 29.828,
+    "kernelCpuSeconds": 4.375,
+    "cpuConsumptionPercent": 21.925,
+    "maxRss": 208031744,
+    "pageFaults": {
+      "IORequired": 188966,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 1505,
+      "writes": 5
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    " _PENTAHO_JAVA": "javaw.exe",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "APPDATA": "C:\\Users\\LENOVO\\AppData\\Roaming",
+    "BROWSERSLIST_IGNORE_OLD_DATA": "1",
+    "ChocolateyInstall": "C:\\ProgramData\\chocolatey",
+    "ChocolateyLastPathUpdate": "132238260512165157",
+    "CommonProgramFiles": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "LAPTOP-NBU6VMGL",
+    "ComSpec": "C:\\WINDOWS\\system32\\cmd.exe",
+    "configsetroot": "C:\\WINDOWS\\ConfigSetRoot",
+    "dp0": "C:\\Users\\LENOVO\\AppData\\Roaming\\npm\\",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "FPS_BROWSER_APP_PROFILE_STRING": "Internet Explorer",
+    "FPS_BROWSER_USER_PROFILE_STRING": "Default",
+    "GDAL_DATA": "C:\\Program Files\\PostgreSQL\\13\\gdal-data",
+    "GRADLE_HOME": "C:\\Gradle\\gradle-5.6.4-all\\gradle-5.6.4",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\LENOVO",
+    "IDEA_INITIAL_DIRECTORY": "C:\\WINDOWS\\system32",
+    "JAVA_HOME": "C:\\Program Files\\jdk1.8.0_131",
+    "JRE_HOME": "C:\\Program~2\\Java\\jre1.8.0_161",
+    "LOCALAPPDATA": "C:\\Users\\LENOVO\\AppData\\Local",
+    "LOGONSERVER": "\\\\LAPTOP-NBU6VMGL",
+    "NUMBER_OF_PROCESSORS": "8",
+    "OneDrive": "C:\\Users\\LENOVO\\OneDrive",
+    "OS": "Windows_NT",
+    "Path": "C:\\app\\lila828\\product\\12.1.0\\dbhome_1\\bin;C:\\app\\oracle\\product\\12.1.0\\dbhome_3\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\jdk1.8.0_131;C:\\Program Files (x86)\\Java\\jre1.8.0_231;C:\\Program Files\\jdk1.8.0_131\\bin;C:\\Users\\LENOVO\\Downloads\\sqlite-tools-win32-x86-3310100\\sqlite-tools-win32-x86-3310100;C:\\Program Files\\MongoDB\\Server\\4.2\\bin;C:\\Users\\LENOVO\\AppData\\Local\\Programs\\Python\\Python38-32\\Scripts;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\LENOVO\\AppData\\Roaming\\npm;C:\\OSGeo4W64\\bin\\qgis-bin.env;C:\\Program Files\\PostgreSQL\\13\\bin;C:\\Program Files\\PostgreSQL\\13\\bin\\postgisgui;C:\\Gradle\\gradle-5.6.4-all\\gradle-5.6.4\\bin;C:\\Users\\LENOVO\\AppData\\Local\\Programs\\Python\\Python38\\Scripts\\;C:\\Users\\LENOVO\\AppData\\Local\\Programs\\Python\\Python38\\;C:\\app\\lila828\\product\\12.1.0\\dbhome_1\\bin;C:\\app\\oracle\\product\\12.1.0\\dbhome_3\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\jdk1.8.0_131;C:\\Program Files (x86)\\Java\\jre1.8.0_231;C:\\Program Files\\jdk1.8.0_131\\bin;C:\\Users\\LENOVO\\Downloads\\sqlite-tools-win32-x86-3310100\\sqlite-tools-win32-x86-3310100;C:\\Program Files\\Mongo;C:\\Users\\LENOVO\\AppData\\Local\\Programs\\Python\\Python38-32;C:\\Users\\LENOVO\\AppData\\Roaming\\npm;;%USERPROFILE%\\AppData\\Local\\Microsoft\\WindowsApps",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JSE;.WSF;.WSH;.MSC",
+    "POSTGIS_ENABLE_OUTDB_RASTERS": "1",
+    "POSTGIS_GDAL_ENABLED_DRIVERS": "GTiff PNG JPEG GIF XYZ DTED USGSDEM AAIGrid",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 142 Stepping 10, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "8e0a",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PROJ_LIB": "C:\\Program Files\\PostgreSQL\\13\\share\\contrib\\postgis-3.1\\proj",
+    "PROMPT": "$P$G",
+    "PSModulePath": "C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules",
+    "PUBLIC": "C:\\Users\\Public",
+    "PyCharm": "C:\\Program Files\\JetBrains\\PyCharm 2018.3.2\\bin;",
+    "SESSIONNAME": "Console",
+    "sqlite": "C:\\Users\\LENOVO\\Downloads\\sqlite-tools-win32-x86-3310100\\sqlite-tools-win32-x86-3310100\\sqlite3.exe",
+    "SystemDrive": "C:",
+    "SystemRoot": "C:\\WINDOWS",
+    "TEMP": "C:\\Users\\LENOVO\\AppData\\Local\\Temp",
+    "TERMINAL_EMULATOR": "JetBrains-JediTerm",
+    "TMP": "C:\\Users\\LENOVO\\AppData\\Local\\Temp",
+    "USERDOMAIN": "LAPTOP-NBU6VMGL",
+    "USERDOMAIN_ROAMINGPROFILE": "LAPTOP-NBU6VMGL",
+    "USERNAME": "LENOVO",
+    "USERPROFILE": "C:\\Users\\LENOVO",
+    "VBOX_MSI_INSTALL_PATH": "C:\\Program Files\\Oracle\\VirtualBox\\",
+    "WEBPACK_DEV_SERVER": "true",
+    "windir": "C:\\WINDOWS",
+    "_prog": "node",
+    "__INTELLIJ_COMMAND_HISTFILE__": "C:\\Users\\LENOVO\\.PhpStorm2019.3\\config\\terminal\\history\\history-122"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\WINDOWS\\SYSTEM32\\ntdll.dll",
+    "C:\\WINDOWS\\System32\\KERNEL32.DLL",
+    "C:\\WINDOWS\\System32\\KERNELBASE.dll",
+    "C:\\WINDOWS\\System32\\WS2_32.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
+    "C:\\WINDOWS\\System32\\RPCRT4.dll",
+    "C:\\WINDOWS\\System32\\ucrtbase.dll",
+    "C:\\WINDOWS\\System32\\ADVAPI32.dll",
+    "C:\\WINDOWS\\System32\\msvcrt.dll",
+    "C:\\WINDOWS\\System32\\sechost.dll",
+    "C:\\WINDOWS\\System32\\USER32.dll",
+    "C:\\WINDOWS\\System32\\win32u.dll",
+    "C:\\WINDOWS\\System32\\GDI32.dll",
+    "C:\\WINDOWS\\System32\\gdi32full.dll",
+    "C:\\WINDOWS\\System32\\msvcp_win.dll",
+    "C:\\WINDOWS\\System32\\PSAPI.DLL",
+    "C:\\WINDOWS\\System32\\CRYPT32.dll",
+    "C:\\WINDOWS\\System32\\bcrypt.dll",
+    "C:\\WINDOWS\\SYSTEM32\\USERENV.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMM.dll",
+    "C:\\WINDOWS\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\WINDOWS\\System32\\IMM32.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\powrprof.dll",
+    "C:\\WINDOWS\\SYSTEM32\\UMPDC.dll",
+    "C:\\WINDOWS\\SYSTEM32\\CRYPTBASE.DLL",
+    "C:\\WINDOWS\\system32\\uxtheme.dll",
+    "C:\\WINDOWS\\System32\\combase.dll",
+    "C:\\WINDOWS\\system32\\mswsock.dll",
+    "C:\\WINDOWS\\SYSTEM32\\kernel.appcore.dll",
+    "C:\\WINDOWS\\System32\\bcryptprimitives.dll",
+    "C:\\WINDOWS\\System32\\NSI.dll",
+    "C:\\WINDOWS\\system32\\pnrpnsp.dll",
+    "C:\\WINDOWS\\SYSTEM32\\DNSAPI.dll"
+  ]
+}

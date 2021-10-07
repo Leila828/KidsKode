@@ -1,0 +1,88 @@
+
+<div class="all"></div>
+<img
+  style="position: absolute; right: 0; margin-top: -33%; width: 203px"
+  src="/assets/aicha/side@2x.png"
+  alt=""
+/>
+<img class="brush" style="top: 23px" src="/assets/aicha/brush2.png" alt="image" />
+
+<h2 style="font-family: 'Amatic SC' ; left: 50%" translate>SIGN UP</h2>
+
+
+<div class="login-page">
+  <div class="form">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <input
+        type="text"
+        formControlName="username"
+        placeholder="{{ 'username' | translate }}"
+        class="form-control"
+        [ngClass]="{ 'is-invalid': submitted && f.username.errors }"
+      />
+      <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+        <div *ngIf="f.username.errors.required" translate>Username is required</div>
+        <div *ngIf="f.username.errors.minlength" translate>
+          Username must be at least 3 characters
+        </div>
+        <div *ngIf="f.username.errors.maxlength" translate>
+          Username must not exceed 20 characters
+        </div>
+      </div>
+      <input
+        type="number"
+        formControlName="age"
+        placeholder="{{ 'age' | translate }}"
+        class="form-control"
+        [ngClass]="{ 'is-invalid': submitted && f.age.errors }"
+      />
+      <div *ngIf="submitted && f.age.errors" class="invalid-feedback">
+        <div *ngIf="f.age.errors.required" translate>Age is required</div>
+        <div *ngIf="f.age.errors.ageRange" translate>
+          You have to be between 8 and 18 to join
+        </div>
+      </div>
+      <input
+        type="text"
+        formControlName="email"
+        placeholder="{{ 'email' | translate }}"
+        class="form-control"
+        [ngClass]="{ 'is-invalid': submitted && f.email.errors }"
+      />
+      <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+        <div *ngIf="f.email.errors.required" translate>Email is required</div>
+        <div *ngIf="f.email.errors.email" translate>Email is invalid</div>
+      </div>
+
+      <input
+        type="password"
+        placeholder="{{ 'password' | translate }}"
+        formControlName="password"
+        class="form-control"
+        [ngClass]="{ 'is-invalid': submitted && f.password.errors }"
+      />
+      <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+        <div *ngIf="f.password.errors.required" translate>Password is required</div>
+        <div *ngIf="f.password.errors.minlength" translate>
+          Password must be at least 6 characters
+        </div>
+        <div *ngIf="f.password.errors.maxlength" translate>
+          Username must not exceed 40 characters
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary" translate>Register</button>
+      <div class="form-group">
+        <div class="alert alert-warning" *ngIf="f.submitted && isSignUpFailed" translate>
+          Signup failed!<br />{{ errorMessage }}
+        </div>
+      </div>
+      <p class="message" translate>
+        Already a member? ?
+        <a routerLink="../../login" style="color: #6fb2a5; text-align: center"
+           translate>Log in to your account</a
+        >
+      </p>
+    </form>
+  </div>
+</div>

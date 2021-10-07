@@ -1,0 +1,148 @@
+
+
+<body
+  style="
+    background-image: url('https://www.transparenttextures.com/patterns/inspiration-geometry.png');
+    background-color: #ffffff;
+  "
+>
+<div *ngIf="isLoggedIn">
+  <div id="sidebar-wrapper">
+    <ul class="sidebar-nav"  id="sidebar-wrappe" >
+      <li class="sidebar-brand"></li>
+      <li >
+        <a  translate>Courses</a>
+      </li>
+      <li>
+        <a  translate>Solutions</a>
+      </li>
+      <li>
+        <a  translate>Challenges</a>
+      </li>
+
+    </ul>
+  </div>
+  <img
+    style="position: absolute; width: 400px; right: 0%; top: 10%"
+    src="assets/aicha/CodeMonkey-Parent-Image.png"
+    alt=""
+  />
+  <app-navbar2></app-navbar2>
+
+  <div class="main">
+    <header class="header" style="background-color: #ffffff">
+      <h2 id="hello"
+        style="
+            position: absolute;
+            margin-top: -26px;
+            margin-left: 76px;
+            font-family: 'Amatic SC';
+            font-size: xxx-large;
+            font-weight: revert;
+          "
+      translate>
+        Hello </h2>
+      <h2  id="user"
+        style="
+            position: absolute;
+            margin-top: -26px;
+            margin-left: 156px;
+            font-family: 'Amatic SC';
+            font-size: xxx-large;
+            font-weight: revert;
+          "
+                         translate>{{ username }}</h2>
+
+      <h2
+        id="dash"
+        style="
+            position: absolute;
+            margin-top: 20px;
+            margin-left: 236px;
+            font-family: 'Amatic SC';
+            font-size: xxx-large;
+            font-weight: revert;
+          "
+                                                            translate>in your Dashboard !
+      </h2>
+    </header>
+    <div id="child">
+      <h3
+        style="
+            background-color: #ffffff;
+            color: #f8de8d;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            font-size: 20px;
+            font-weight: 500;
+          "
+     translate >
+        PARENT DASHBOARD
+      </h3>
+      <hr style="color: #f9cf0e; height: 5px; margin-bottom: 10px" />
+      <div
+        style="
+            color: #f9cf0e;
+            height: 3px;
+            margin-bottom: -6px;
+            background-color: #f9cf0e;
+            margin-top: -17px;
+          "
+      ></div>
+
+      <img class="lapin" src="/assets/aicha/avatarparent.png" alt="image" />
+      <div class="userdetails child">
+        <h4>
+          <strong translate>Child Username</strong>
+        </h4>
+        <div *ngIf="parent">
+          <h6>{{ parent.enfant.compte.username }}</h6>
+        </div>
+      </div>
+
+      <h6 style="margin-left: 128px" translate>
+        <img
+          style="height: 15px; width: 15px"
+          ng-cdn-src="locales/warning.png"
+          class="ng-isolate-scope"
+          src="https://d2j5eocv5gptnv.cloudfront.net/assets/locales/warning-a16321f0719391db1dff87f5490b7e247fe4ff5f3968e99d41ba0c9dd143230b.png"
+        />
+        To start playing, log in to your child’s account.
+      </h6>
+      <a routerLink="/Dashboard/child" class="button" translate>Child </a>
+    </div>
+    <div style="width: 683px; height: 310px" id="box">
+      <div
+        style="
+            background-color: #ffffff;
+            display: block;
+            height: 246px;
+            width: 560px;
+            margin-top: -33px;
+            margin-left: 7px;
+          "
+        *ngIf="barChartData"
+      >
+        <canvas
+          id="bar"
+          height="300"
+          width=" 550"
+          baseChart
+          class="chart"
+          [datasets]="barChartData"
+          [labels]="barChartLabels"
+          [options]="barChartOptions"
+          [chartType]="barChartType"
+        >
+        </canvas>
+      </div>
+    </div>
+    <!-- <button type="button" class="button" (click)="btnClick()">
+      Child Dashboard
+    </button>-->
+  </div>
+</div>
+</body>
+
+<!--[legend]="barChartLegend"
+-->

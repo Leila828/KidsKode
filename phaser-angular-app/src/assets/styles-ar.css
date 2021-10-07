@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  background-color: yellow;
+}
+.select{
+  background-color: yellow;
+}
+.opaque {
+  background-color: rgba(0, 253, 4, 0.87);
+}

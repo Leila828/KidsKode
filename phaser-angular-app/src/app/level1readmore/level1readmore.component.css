@@ -1,0 +1,470 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Schoolbell&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900|Poppins:300,400,500,600,700,800,900");
+
+.all img {
+  background-size: cover;
+  height: 411px;
+  width: -webkit-fill-available;
+}
+
+.hero-section {
+  position: absolute;
+  position: absolute;
+  z-index: 1;
+  top: 20%;
+  margin-top: 10px;
+  margin-left: -400px;
+  left: 41%;
+
+  width: 300px;
+  height: 35opx;
+  text-align: center;
+  transition: all 1000ms;
+}
+
+.about-title {
+  font-family: "Amatic SC", Sans-serif;
+}
+.about-text {
+  color: #424c6a;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Exo2", sans-serif;
+  font-weight: bold;
+  margin-top: 3px;
+}
+.button {
+  background-color: #f9d000;
+  height: 44px;
+  width: 154px;
+  padding: 12px 24px 12px 24px;
+  cursor: pointer;
+  text-align: center;
+  text-transform: capitalize;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  transition: all 0.3s ease 0s;
+  box-shadow: rgba(122, 112, 0, 0.29) 0px -6px 0px -1px inset;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  text-decoration: none;
+  color: #ffffff;
+  right: 4%;
+  position: absolute;
+  margin-top: 9px;
+}
+.hero-section h1 {
+  font-family: "Amatic SC", Sans-serif;
+  font-size: 110px;
+  font-weight: 600;
+  line-height: 1.1em;
+  letter-spacing: 2.1px;
+  text-shadow: 2px 5px 10px #54595f;
+  color: white;
+}
+.hero-section h2 {
+  font-family: "Montserrat", sans-serif;
+  margin-left: -64%;
+  font-weight: 700;
+  width: 232%;
+  line-height: 1.7;
+  margin-top: 0rem;
+  color: #333333;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-style: normal;
+  line-height: 1.5em;
+  letter-spacing: 0.2px;
+}
+.custom-shape-divider-bottom-1628366067 {
+  position: absolute;
+  /* bottom: 0; */
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  /* margin-bottom: 209px; */
+  margin-top: -62px;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1628366067 svg {
+  position: relative;
+  display: block;
+  width: calc(115% + 1.3px);
+  height: 62px;
+}
+
+.custom-shape-divider-bottom-1628366067 .shape-fill {
+  fill: #ffffff;
+}
+.custom-shape-divider-top-1628384287 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1628384287 svg {
+  position: relative;
+  display: block;
+  width: calc(115% + 1.3px);
+  height: 62px;
+  margin-top: 2035px;
+}
+/*
+    margin-left: 597px;
+    width: 191px;
+    margin-top: -273px;
+*/
+.custom-shape-divider-top-1628384287 .shape-fill {
+  fill: #ffffff;
+}
+.text-right {
+  position: absolute;
+  margin-top: -22%;
+  font-family: "Schoolbell", cursive;
+
+  color: white;
+  margin-left: 350px;
+}
+.text-right h2 {
+  font-size: 24px;
+  font-weight: 700;
+
+  padding-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+}
+.custom-shape-divider-top-1628392911 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1628392911 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 78px;
+  margin-top: 2606px;
+}
+
+.custom-shape-divider-top-1628392911 .shape-fill {
+  fill: #ffffff;
+}
+
+.custom-shape-divider-bottom-1628432593 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1628432593 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 78px;
+}
+
+.custom-shape-divider-bottom-1628432593 .shape-fill {
+  fill: #f9d000;
+}
+.cloud {
+  background-image: url("/assets/aicha/clouds-background.png");
+  content: "";
+  height: 128vh;
+  width: 100%;
+  background-size: cover;
+  /* background-position: center; */
+  display: block;
+  background-size: 470px 616px;
+}
+ul {
+}
+
+ul li {
+  font-size: 20px;
+  font-weight: 600;
+  display: inline-block;
+  text-decoration: none;
+  margin: 12px;
+  display: inline-block;
+  text-decoration: none;
+  margin: 12px;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #424c6a;
+}
+ul img {
+  padding: 8px;
+}
+
+.motivation {
+  position: absolute;
+  z-index: 1;
+  margin-left: 40%;
+  width: 300px;
+  text-align: center;
+}
+.motivation h2 {
+  letter-spacing: 3px;
+  margin-left: -12%;
+
+  width: max-content;
+  font-weight: bold;
+  font-family: "Schoolbell", cursive;
+}
+.motivation p {
+  font-weight: bold;
+  font-family: "Exo 2", sans-serif;
+  width: max-content;
+  margin-left: -55%;
+}
+
+/* Styles for page */
+.container {
+  width: 70%;
+  margin: 150px auto;
+}
+
+body {
+  color: #4b4b4b;
+  font-family: sans-serif;
+}
+body a {
+  cursor: pointer;
+  color: #4b4b4b;
+  text-decoration: none;
+}
+body section {
+  margin-bottom: 90px;
+}
+body section h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: normal;
+  letter-spacing: 10px;
+  font-size: 25px;
+  line-height: 1.5;
+}
+body section p,
+body section a {
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+span {
+  letter-spacing: 0px;
+}
+
+p {
+  font-weight: 200;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+/*
+.toggle:last-child {
+  border-bottom: 1px solid #dddddd;
+}
+.toggle .toggle-title {
+  position: relative;
+  display: block;
+  border-top: 1px solid #dddddd;
+  margin-bottom: 6px;
+}
+.toggle .toggle-title h3 {
+  font-size: 20px;
+  margin: 0px;
+  line-height: 1;
+  cursor: pointer;
+  font-weight: 200;
+}
+.toggle .toggle-inner {
+  padding: 7px 25px 10px 25px;
+  display: none;
+  margin: -7px 0 6px;
+}
+.toggle .toggle-inner div {
+  max-width: 100%;
+}
+.toggle .toggle-title .title-name {
+  display: block;
+  padding: 25px 25px 14px;
+  font-weight: 400;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #424c6a;
+}
+.toggle .toggle-title a i {
+  font-size: 22px;
+  margin-right: 5px;
+}
+.toggle .toggle-title i {
+  position: absolute;
+  background: url("http://arielbeninca.com/Storage/plus_minus.png") 0px -24px no-repeat;
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease;
+  margin: 20px;
+  right: 0;
+}
+.toggle .toggle-title.active i {
+  background: url("http://arielbeninca.com/Storage/plus_minus.png") 0px 0px
+    no-repeat;
+}*/
+.button {
+  background-color: #f9d000;
+
+  height: 44px;
+  width: 120px;
+  padding: 12px 24px 12px 24px;
+  cursor: pointer;
+  text-align: center;
+  text-transform: capitalize;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  transition: all 0.3s ease 0s;
+  box-shadow: rgba(122, 112, 0, 0.29) 0px -6px 0px -1px inset;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  text-decoration: none;
+  right: 30%;
+  margin-top: 4px;
+  position: absolute;
+}
+.faq-section {
+  background: #fdfdfd;
+  min-height: 100vh;
+  padding: 10vh 0 0;
+}
+.faq-title h2 {
+  position: relative;
+  margin-bottom: 45px;
+  display: inline-block;
+  font-weight: 600;
+  line-height: 1;
+}
+.faq-title h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 60px;
+  height: 2px;
+  background: #f9d000;
+  bottom: -25px;
+  margin-left: -30px;
+}
+.faq-title p {
+  padding: 0 190px;
+  margin-bottom: 10px;
+}
+
+.faq {
+  background: #ffffff;
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+}
+
+.faq .card {
+  border: none;
+  background: none;
+  border-bottom: 1px dashed #cee1f8;
+}
+
+.faq .card .card-header {
+  padding: 0px;
+  border: none;
+  background: none;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.faq .card .card-header:hover {
+  background: rgba(233, 30, 99, 0.1);
+  padding-left: 10px;
+}
+.faq .card .card-header .faq-title {
+  width: 100%;
+  text-align: left;
+  padding: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #3b566e;
+  text-decoration: none !important;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.faq .card .card-header .faq-title .badge {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 14px;
+  float: left;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  text-align: center;
+  background: #f9d000;
+  color: #fff;
+  font-size: 12px;
+  margin-right: 20px;
+}
+
+.faq .card .card-body {
+  padding: 30px;
+  padding-left: 35px;
+  padding-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #6f8ba4;
+  line-height: 28px;
+  letter-spacing: 1px;
+  border-top: 1px solid #f3f8ff;
+}
+
+.faq .card .card-body p {
+  margin-bottom: 14px;
+}
+
+@media (max-width: 991px) {
+  .faq {
+    margin-bottom: 30px;
+  }
+  .faq .card .card-header .faq-title {
+    line-height: 26px;
+    margin-top: 10px;
+  }
+}
